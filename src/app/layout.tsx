@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         className={cn(["bg-black font-sans antialiased", fontSans.variable])}
       >
-        <div className="max-w-screen-sm mx-auto w-full min-h-screen px-4">
+        <div className="max-w-screen-sm mx-auto w-full min-h-svh px-4">
           {children}
         </div>
       </body>
