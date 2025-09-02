@@ -56,5 +56,8 @@ export function useConnectWallet(option?: UseConnectWalletOption) {
   return {
     status,
     connectAsync,
+    isConnected: status === 'success',
+    isPending: status === 'pending',
+    isIdle: status === 'idle',
   };
 }

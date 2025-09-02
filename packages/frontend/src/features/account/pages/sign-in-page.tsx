@@ -1,8 +1,10 @@
 import { shortenWalletAddress } from '@/lib/formatter';
 import { useConnectWallet } from '../hooks/useConnectWallet';
+import { useAccount } from 'wagmi';
 
 export default function SignInPage() {
-  const { connectAsync } = useConnectWallet();
+  const { connectAsync, isConnected } = useConnectWallet();
+  const { address } = useAccount();
 
   return (
     <div>
